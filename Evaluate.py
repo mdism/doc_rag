@@ -16,6 +16,8 @@ from ragas.metrics import Faithfulness, AnswerRelevancy, ContextPrecision, Conte
 from ragas.llms import LangchainLLMWrapper
 from ragas.embeddings import LangchainEmbeddingsWrapper
 from langchain_ollama import ChatOllama, OllamaEmbeddings
+from dotenv import load_dotenv
+load_dotenv()
 
 sys.path.insert(0, ".")
 from tools.retriever_tool import DocumentRetrieverTool

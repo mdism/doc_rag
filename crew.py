@@ -3,6 +3,8 @@ from crewai import Agent, Crew, LLM, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
 from tools.retriever_tool import DocumentRetrieverTool
+from dotenv import load_dotenv
+load_dotenv()
 
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 if not OLLAMA_BASE_URL.startswith(("http://", "https://")):

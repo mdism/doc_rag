@@ -9,6 +9,10 @@ import uuid
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
+from dotenv import load_dotenv
+load_dotenv()
+
+
 
 from instrumentation import setup_tracing
 from crew import DocRagDemoCrew

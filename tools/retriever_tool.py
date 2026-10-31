@@ -6,6 +6,8 @@ from llama_index.vector_stores.postgres import PGVectorStore
 from llama_index.core.vector_stores.types import VectorStoreQuery
 from llama_index.core.postprocessor import SentenceTransformerRerank
 from llama_index.core.schema import NodeWithScore, QueryBundle
+from dotenv import load_dotenv
+load_dotenv()
 
 EMBED_MODEL = "nomic-embed-text"
 EMBED_DIM = 768

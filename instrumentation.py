@@ -1,5 +1,7 @@
 import os
 from phoenix.otel import register
+from dotenv import load_dotenv
+load_dotenv()
 
 
 def setup_tracing(inputs=None):

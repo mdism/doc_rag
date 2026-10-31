@@ -7,6 +7,8 @@ from llama_index.core.node_parser import MarkdownNodeParser
 from llama_index.core.schema import TextNode
 from llama_index.embeddings.ollama import OllamaEmbedding
 from llama_index.vector_stores.postgres import PGVectorStore
+from dotenv import load_dotenv
+load_dotenv()
 
 # ---- Config ----------------------------------------------------------
 MIN_CHARS = 200
